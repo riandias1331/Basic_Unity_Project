@@ -11,7 +11,7 @@ public class TiroSimples : MonoBehaviour
         {
             GameObject projetil = Instantiate(projetilPrefab, transform.position, Quaternion.identity);
             Rigidbody2D rb = projetil.GetComponent<Rigidbody2D>();
-            rb.velocity = Vector2.right * forcaTiro;
+            rb.linearVelocity = Vector2.right * forcaTiro;
         }
     }
 }
